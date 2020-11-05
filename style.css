@@ -112,9 +112,8 @@ a:hover {
 
 .nav .sharing {
 	text-align: left;
-	font-size: 0;
-	margin-left: 24px;
-	margin-top: 24px;
+	margin-left: 20px;
+	margin-top: 20px;
 }
 
 .nav .sharing img {
@@ -122,6 +121,15 @@ a:hover {
 	height: 19px;
 	display: inline-block;
 	margin-right: 10px;
+}
+
+.nav .sharing p {
+    position: relative;
+    bottom: 3px;
+    font-size: 16px;
+    margin: -5px;
+    color: #7A7A7A;
+	display: inline-block;
 }
 
 .nav .sub_nav {
@@ -239,16 +247,18 @@ a:hover {
 
 .footer {
 	font-size: 13px;
-	margin-bottom: 8px;
+	margin-bottom: -20px;
 	color: #8c9092;
 }
 
 .footer a {
+    text-align: center;
+    cursor: default;
 	color: #595d5f;
 }
 
 .footer a:hover {
-	color: #414344;
+	color: #323435;
 }
 
 .shroud {
