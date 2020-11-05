@@ -45,7 +45,8 @@ document.body.addEventListener("click", function(e) {
 
     const container = closest(button, "[data-info]");
 
-    document.querySelector(".lightbox .title").innerHTML = container.innerHTML
+    const title = container.innerHTML
+    document.querySelector(".lightbox .title").innerHTML = title;
 
     const body = container.dataset.info;
     document.querySelector(".lightbox .body").innerHTML = body;
