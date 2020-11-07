@@ -65,6 +65,28 @@ window.addEventListener("keydown", function(e) {
     }
 });
 
+var slideIndexes = [];
+var slideContainers = document.getElementsByClassName("slideshow-container");
+for (const el of slideContainers) {
+    slideIndexes[el.id] = 1
+    showSlides(el.id, 1);
+}
+
+function plusSlides(id, n) {
+    showSlides(id, slideIndexes[id] += n);
+}
+
+function showSlides(id, n) {
+    var i;
+    var slides = document.getElementById(id).getElementsByClassName("slideshow");
+    if (n > slides.length) {slideIndexes[id] = 1}
+    if (n < 1) {slideIndexes[id] = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndexes[id]-1].style.display = "block";
+}
+
 function __guard__(value, transform) {
     return (typeof value !== 'undefined' && value !== null) ? transform(value) : undefined;
 }
