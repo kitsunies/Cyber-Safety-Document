@@ -2,20 +2,6 @@ const $ = id => document.getElementById(id);
 
 const matches = (el, selector) => (el.matches || el.matchesSelector || el.msMatchesSelector || el.mozMatchesSelector || el.webkitMatchesSelector || el.oMatchesSelector).call(el, selector);
 
-const debounce = function(fn, wait) {
-    let timeout = null;
-    return function() {
-        if (timeout) {
-            clearTimeout(timeout);
-        }
-
-        return timeout = setTimeout(function() {
-            timeout = null;
-            return fn();
-        }, wait);
-    };
-};
-
 const closest = function(el, selector) {
     while (true) {
         if (matches(el, selector)) {
@@ -84,7 +70,7 @@ function showSlides(id, n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    slides[slideIndexes[id]-1].style.display = "block";
+    // slides[slideIndexes[id]-1].style.display = "block";
 }
 
 function __guard__(value, transform) {
