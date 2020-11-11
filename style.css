@@ -28,7 +28,7 @@ html {
 body {
 	font-family: sans-serif;
 	background: #F0F0F0;
-	color: #727779;
+	color: #677a81;
 	font-size: 16px;
 	margin: 0px;
 	padding: 0px;
@@ -203,7 +203,7 @@ a:hover {
 }
 
 .main .message {
-	color: #f05a7f;
+	color: #556EE6;
 	font-size: 30px;
 	text-align: center;
 	margin: 30px 20px 0 20px;
@@ -264,13 +264,13 @@ a:hover {
 }
 
 .text_btn {
-	color: #f05a7f;
+	color: #556EE6;
 	cursor: pointer;
 }
 
 .text_btn.active,
 .text_btn:hover {
-	color: #d31d4a;
+	color: rgb(52, 77, 204);
 }
 
 .main .scroll_spacer {
